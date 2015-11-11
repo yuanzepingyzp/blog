@@ -1,0 +1,233 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: white;
+    font-family: "Microsoft YaHei";
+}
+
+body{
+     background-color: #e5e5e5;
+}
+
+section{
+    float:left;
+}
+
+#leftBox{
+     width: 30%;
+ }
+
+#middleBox{
+    width:60%;
+    margin-left: 450px;
+}
+
+#rightBox{
+    width:5%;
+    margin-top: 500px;
+}
+
+#blogMenuHeader{
+    width: 270px;
+    height: 40px;
+    background-color: #39566a;
+}
+
+#blogMenuHeader canvas{
+    float: left;
+}
+#blogMenuHeader span{
+    float:left;
+    margin-left: 40px;
+    margin-right: 80px;
+    font-size: 20px;
+    color: #7795a9;
+    font-family: "Microsoft YaHei";
+    font-weight: 900;
+    height: 40px;
+    line-height: 40px;
+}
+
+#blogMenu li{
+    width: 270px;
+    height: 40px;
+    background-color: rgb(50,50,50);
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Microsoft YaHei";
+    list-style: none;
+    color: white;
+    border-bottom: 1px solid rgb(20,20,20);
+    cursor: pointer;
+}
+
+#blogMenu{
+    position: fixed;
+    margin: 50px 0;
+}
+
+aside{
+    position:fixed;
+    top: 350px;
+}
+
+aside p{
+    width: 20px;
+    margin-left: 20px;
+    float: left;
+    font-family: "Microsoft YaHei";
+    color: white;
+    font-size: 12px;
+}
+
+#motto{
+    height:169px;
+    width: 270px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+img{
+    display: block;
+}
+
+#mottoText{
+    position: absolute;
+    top:10px;
+    left:60px;
+}
+
+#middleBox header{
+    position: relative;
+    margin-top: 10px;
+    color: white;
+    font-family: "Microsoft YaHei";
+    font-weight: 600;
+}
+#headerText{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+#headerText h1{
+    margin: 20px 25px;
+    font-size: 30px;
+}
+
+#headerText h2{
+    float: right;
+    font-size: 20px;
+    margin-top: 40px;
+}
+#middleBox ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px 65px;
+}
+
+#middleBox ul li a{
+    text-decoration: none;
+}
+
+#headerBlack{
+    height: 148px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+#middleBox article{
+    width:740px;
+    height: 600px;
+    background-color: #39566a;
+    padding: 30px 30px;
+}
+
+#commentButton{
+    width:800px;
+    height: 40px;
+    background-color: white;
+}
+
+#commentBox{
+    width:800px;
+    height: 100px;
+    background-color: #39566a;
+}
+
+header img[src="image/photo.png"]{
+    position: absolute;
+    left: -60px;
+    top:130px;
+    border-radius: 100px 100px 100px 100px;
+    border: 10px solid white;
+}
+
+#triangle{
+    cursor: pointer;
+}
+
+#commentButton span{
+   float: left;
+    float:left;
+    margin-left: 40px;
+    margin-right: 60px;
+    font-size: 20px;
+    color: #7795a9;
+    font-family: "Microsoft YaHei";
+    font-weight: 900;
+    height: 40px;
+    line-height: 40px;
+}
+
+#commentNumber{
+    float: left;
+}
+
+#commentLogo{
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#blogMenu ul{
+    display: none;
+}
+
+#rightBox img{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.note h1{
+    text-align: center;
+    color:#e5bd0b;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+article div{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.note p{
+    margin: 10px 0;
+}
