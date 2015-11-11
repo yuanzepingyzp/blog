@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0;
     border: 0;
-    color: white;
     font-family: "Microsoft YaHei";
 }
 
@@ -68,6 +67,9 @@ section{
     border-bottom: 1px solid rgb(20,20,20);
     cursor: pointer;
 }
+#blogMenu ul li:hover{
+    border-bottom:2px solid #bf321d ;
+}
 
 #blogMenu{
     position: fixed;
@@ -104,6 +106,7 @@ img{
     position: absolute;
     top:10px;
     left:60px;
+    animation: move 5s;
 }
 
 #middleBox header{
@@ -137,8 +140,12 @@ img{
     padding: 5px 65px;
 }
 
+#middleBox ul li:hover{
+    border-top: 5px solid rgb(130,130,130);
+}
 #middleBox ul li a{
     text-decoration: none;
+    color: white;
 }
 
 #headerBlack{
@@ -155,6 +162,7 @@ img{
     height: 600px;
     background-color: #39566a;
     padding: 30px 30px;
+    overflow: auto;
 }
 
 #commentButton{
@@ -165,7 +173,7 @@ img{
 
 #commentBox{
     width:800px;
-    height: 100px;
+    height: 500px;
     background-color: #39566a;
 }
 
@@ -230,4 +238,65 @@ article div{
 
 .note p{
     margin: 10px 0;
+}
+
+.note{
+    color: white;
+}
+
+#headerText ul li:first-child{
+    border-top: 5px solid #bf321d;
+}
+
+#blogMenu .active{
+    background-color: rgb(160,160,160);
+}
+
+@keyframes move {
+    0% {left:60px}
+    25%{left:0}
+    50%{left:120px}
+    100%{left: 60px}
+}
+
+#commentBox div{
+    float: left;
+    margin: 10px 10px;
+}
+#commentBox textarea{
+    float: left;
+    height: 183px;
+    margin: 10px 10px;
+}
+
+#commentBox input[placeholder]{
+    width: 200px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+#commentBox input[value]{
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+
+#commentBox input[type="submit"]{
+    background-color:#ffa600;
+    color: #103550;
+    margin-right: 10px;
+}
+
+#commentBox article{
+    float: right;
+    color: white;
+    width:200px;
+    height: 150px;
+}
+
+#commentBox article h1{
+    text-align: center;
+    color:#ffa600;
+    font-size: 20px;
+
 }

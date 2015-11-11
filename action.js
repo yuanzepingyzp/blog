@@ -10,18 +10,10 @@ window.onload= draw;
     }
 
 $(document).ready(function(){
-    var isRotate=true;
    $("#triangle").click(function(){
         $("#blogMenu ul").stop().slideToggle();
        var a="transform"?"transform":"webkitTransform";
-       if(isRotate){
-           $(this).css(a,"rotate(180deg)");
-           isRotate=false;
-       }
-       else {
-           $(this).css(a, "rotate(0deg)");
-           isRotate = true;
-       }
+       rotateAnimate();
     });
 
     $("#commentButton").mouseover(function(){
@@ -30,16 +22,23 @@ $(document).ready(function(){
         commentLogo("#39566a")
     });
 
-    $("#blogMenu li").mouseover(function(){
-        $(this).css("background-color","#bf321d");
-    }).mouseout(function(){
-        $(this).css("background-color","rgb(50,50,50)");
-    });
-
-    $("#blogMenu ul li").click(function(){
+        var blogList=$("#blogMenu ul li");
+        blogList.click(function(){
         var selectBlog=$(this).attr("rel");
         $(".show").removeClass("show");
         $("#"+selectBlog).addClass("show");
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+    var mottoBlack=$("#motto");
+    var mottoText=$("#mottoText");
+    mottoBlack.mouseover(function(){
+        $(this).slideToggle();
+        mottoText.fadeToggle();
+    });
+    $("aside").mouseleave(function(){
+        mottoBlack.slideToggle();
+        mottoText.fadeToggle();
     })
 });
 
@@ -107,4 +106,33 @@ function commentLogo(color){
 function getBlogNumber(){
     var number=document.getElementById("blogMenu").getElementsByTagName("li").length;
     return number;
+};
+
+var dg=0;
+var isRotate=true;
+function rotateAnimate(){
+    var obj=document.getElementById("triangle");
+    if(isRotate){
+        obj.style.webkitTransform="rotate("+dg+"deg)";
+        obj.style.transform="rotate("+dg+"deg)";
+        dg+=10;
+        if (dg<190){
+            setTimeout(rotateAnimate,20);
+        }
+        else{
+            isRotate=false;
+        }
+    }
+    else{
+        obj.style.webkitTransform="rotate("+dg+"deg)";
+        obj.style.transform="rotate("+dg+"deg)";
+        dg-=10;
+       if(dg>-10){
+           setTimeout(rotateAnimate,20);
+       }
+        else{
+           isRotate=true;
+       }
+    }
+
 }
