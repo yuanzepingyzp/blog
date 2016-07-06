@@ -17,15 +17,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
-    width: 1950px;
-    
 }
 
 
 #leftBox{
-     width: 270px;
-    float:left;
-    margin:10px 10px;
+     width: 15%;
+    position: fixed;
     box-shadow:3px 3px 5px black;
  }
 
@@ -42,19 +39,20 @@ body{
 }
 
 #blogMenuHeader{
-    width: 270px;
+    width: 100%;
     height: 40px;
     background-color: #292728;
 }
 
-#blogMenuHeader canvas{
-    float: left;
+#blogMenuHeader canvas#triangle{
+    float: right;
+}
+
+#blogMenuHeader canvas#blogNumber{
+    float:left;
 }
 #blogMenuHeader span{
     float:left;
-    margin-left: 40px;
-    margin-right: 80px;
-    font-size: 20px;
     color: #7795a9;
     font-family: "Microsoft YaHei";
     font-weight: 900;
@@ -63,7 +61,7 @@ body{
 }
 
 #blogMenu li{
-    width: 270px;
+    width: 100%;
     height: 40px;
     background-color: rgb(50,50,50);
     font-size: 12px;
@@ -166,13 +164,13 @@ img{
 }
 
 #commentButton{
-    width:450px;
+    width:100%;
     height: 40px;
     background-color: rgb(220,220,220);
 }
 
 #commentBox{
-    width:450px;
+    width:100%;
     height: 1000px;
 /*    background-color:rgba(1,1,1,0.5);*/
     background-color: #292728;
@@ -208,9 +206,6 @@ header img[src="image/photo.png"]{
 
 #commentButton span{
    float: left;
-    float:left;
-    margin-left: 40px;
-    margin-right: 60px;
     font-size: 20px;
     color: #7795a9;
     font-family: "Microsoft YaHei";
@@ -225,7 +220,6 @@ header img[src="image/photo.png"]{
 
 #commentLogo{
     float: right;
-    margin-right: 50px;
     cursor: pointer;
 }
 
@@ -300,13 +294,13 @@ article div{
 }
 
 #commentBox input[placeholder]{
-    width: 200px;
+    width: 100%;
     height: 30px;
     padding: 0 5px;
 }
 
 #commentBox input[value]{
-    width: 100px;
+    width: 30%;
     height: 30px;
     float: left;
 }
@@ -332,5 +326,6 @@ article div{
 }
 
 #comment{
+    width: 15%;
     float:right;
 }
