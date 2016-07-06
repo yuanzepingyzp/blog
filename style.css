@@ -23,7 +23,7 @@ body{
 
 #leftBox{
     float:left;
-    width: 800px;
+    width: 50%;
     margin:0px 0px;
 /*    box-shadow:3px 3px 5px black;*/
  }
@@ -33,6 +33,7 @@ body{
     margin:0px 0px;
 /*    box-shadow: -3px 0 3px black;*/
     clear: left;
+    width:50%;
 }
 
 
@@ -57,7 +58,7 @@ body{
 }
 
 #blogMenu li{
-    width: 800px;
+    width: 100%;
     height: 40px;
     background-color: rgb(50,50,50);
     font-size: 12px;
@@ -85,7 +86,7 @@ body{
 
 #motto{
     height:169px;
-    width: 270px;
+    width: 100%;
     background-color: rgba(0,0,0,0.7);
     position: absolute;
     top:0;
@@ -125,7 +126,7 @@ img{
 #headerText h2{
     float: left;
     font-size: 20px;
-    margin: 100px 50px;
+    margin: 50px 50px;
 }
 #middleBox ul li{
     list-style: none;
@@ -144,30 +145,30 @@ img{
 
 #headerBlack{
     height: 148px;
-    width: 800px;
+    width: 100%;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
-    top: 45px;
+    top: 0px;
     left: 0;
 }
 
 #middleBox article{
-    width:740px;
+    width:100%;
     height: 800px;
     background-color:rgba(100,100,100,0.7);
 /*    background-color: #292728;*/
-    padding: 30px 30px;
+/*    padding: 30px 30px;*/
     overflow: auto;
 }
 
 #commentButton{
-    width:400px;
+    width:100%;
     height: 40px;
     background-color: rgb(220,220,220);
 }
 
 #commentBox{
-    width:400px;
+    width:100%;
     height: 1000px;
     background-color:rgba(100,100,100,0.5);
     
@@ -176,11 +177,16 @@ img{
 
 header img[src="image/photo.png"]{
     position: absolute;
-    left: 750px;
+    left: 95%;
     top:130px;
     border-radius: 100px 100px 100px 100px;
     border: 10px solid white;
     box-shadow:-3px 0 3px black;
+}
+
+header img[src="image/p2.jpg"]{
+    width: 100%;
+    height:148px;
 }
 
 #triangle.rotateUp{
@@ -230,11 +236,11 @@ position:fixed;
     top:0;
     right:0;
     width:50px;
-    height:250px;
+    height:1000px;
     border-left:10px solid #292728;
 /*    border-right:5px solid #bf321d;*/
     background-color:rgba(200,200,200,0.3);
-    padding-top: 800px;
+    padding-top: 10px;
     opacity:0.7;
 }
 #rightBox img{
@@ -297,7 +303,7 @@ article div{
 }
 
 #commentBox input[placeholder]{
-    width: 200px;
+    width: 100%;
     height: 30px;
     padding: 0 5px;
 }
@@ -329,6 +335,7 @@ article div{
 }
 
 #comment{
+    width: 20%;
     position :fixed;
     top:40px;
     right:60px;
