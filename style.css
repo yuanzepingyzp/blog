@@ -165,13 +165,13 @@ img{
 }
 
 #commentButton{
-    width:450px;
+    width:230px;
     height: 40px;
     background-color: rgb(220,220,220);
 }
 
 #commentBox{
-    width:450px;
+    width:230px;
     height: 1000px;
 /*    background-color:rgba(1,1,1,0.5);*/
     background-color: #292728;
