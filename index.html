@@ -5,6 +5,7 @@
     <title>袁泽平的博客</title>
     <link  type="text/css" rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
+    <meta name="viewport" content="width=device-width"/>
    
 
 </head>
@@ -13,7 +14,7 @@
     
     <section id="leftBox">
         <div id="blogMenu">
-            <div id="blogMenuHeader"><canvas width="40" height="40" id="blogNumber"></canvas><span>blog </span><canvas height="40" width="40" id="triangle"></canvas></div>
+            <div id="blogMenuHeader"><canvas width="40" height="40" id="blogNumber"></canvas><span>blog</span><canvas height="40" width="40" id="triangle"></canvas></div>
             <ul>
                 <li rel="htmlNote" class="active">Html笔记</li>
                 <li rel="cssNote">Css笔记</li>
@@ -26,10 +27,33 @@
     
     
     
-   
+    <section id="comment">
+            <div id="commentButton"><canvas height="40" width="40" id="commentNumber"></canvas><span>comment</span><canvas id="commentLogo" width="40" height="40"></canvas></div>
+        <div id="commentBox">
+            <form>
+                <div>
+                    <input placeholder="姓名">
+                    <br>
+                    <br>
+                    <input placeholder="电话">
+                    <br>
+                    <br>
+                    <input placeholder="邮箱">
+                    <br>
+                    <br>
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </div>
+                <textarea></textarea>
+                <article><h1><b>温馨提示</b></h1>
+    
+                </article>
+            </form>
+        </div>
+        </section>
     
     
-  <section id="rightBox">
+<section id="rightBox">
         <img src="image/weixing.png">
         <img src="image/qq.png">
         <img src="image/xinglang.png">
@@ -112,30 +136,7 @@
         </article>  
     </section>
             
-   <section id="comment">
-            <div id="commentButton"><canvas height="40" width="40" id="commentNumber"></canvas><span>comment</span><canvas id="commentLogo" width="40" height="40"></canvas></div>
-        <div id="commentBox">
-            <form>
-                <div>
-                    <input placeholder="姓名">
-                    <br>
-                    <br>
-                    <input placeholder="电话">
-                    <br>
-                    <br>
-                    <input placeholder="邮箱">
-                    <br>
-                    <br>
-                    <input type="submit" value="提交">
-                    <input type="reset" value="重置">
-                </div>
-                <textarea></textarea>
-                <article><h1><b>温馨提示</b></h1>
     
-                </article>
-            </form>
-        </div>
-        </section>
     
      <script src="action.js"></script>
 </body>
