@@ -10,12 +10,11 @@ window.onload= draw;
     }
 
 $(document).ready(function(){
-   $("#triangle").click(function(){
-        $("#blogMenu ul").stop().slideToggle();
-       var a="transform"?"transform":"webkitTransform";
-       rotateAnimate();
+    $("#blogMenu").mouseover(function(){
+        $("#triangle").removeClass("rotateDown").addClass("rotateUp");
+    }).mouseleave(function(){
+        $("#triangle").removeClass("rotateUp").addClass("rotateDown");
     });
-
     $("#commentButton").mouseover(function(){
         commentLogo("#1bbb4b");
     }).mouseleave(function(){
@@ -107,32 +106,3 @@ function getBlogNumber(){
     var number=document.getElementById("blogMenu").getElementsByTagName("li").length;
     return number;
 };
-
-var dg=0;
-var isRotate=true;
-function rotateAnimate(){
-    var obj=document.getElementById("triangle");
-    if(isRotate){
-        obj.style.webkitTransform="rotate("+dg+"deg)";
-        obj.style.transform="rotate("+dg+"deg)";
-        dg+=10;
-        if (dg<190){
-            setTimeout(rotateAnimate,20);
-        }
-        else{
-            isRotate=false;
-        }
-    }
-    else{
-        obj.style.webkitTransform="rotate("+dg+"deg)";
-        obj.style.transform="rotate("+dg+"deg)";
-        dg-=10;
-       if(dg>-10){
-           setTimeout(rotateAnimate,20);
-       }
-        else{
-           isRotate=true;
-       }
-    }
-
-}

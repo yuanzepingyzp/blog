@@ -5,10 +5,12 @@
     <title>袁泽平的博客</title>
     <link  type="text/css" rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
-    <script src="action.js"></script>
+   
 
 </head>
 <body>
+        
+    
     <section id="leftBox">
         <div id="blogMenu">
             <div id="blogMenuHeader"><canvas width="40" height="40" id="blogNumber"></canvas><span>blog</span><canvas height="40" width="40" id="triangle"></canvas></div>
@@ -20,16 +22,44 @@
                 <li rel="design">设计随笔</li>
             </ul>
         </div>
-
-        <aside>
-            <img src="image/p1.jpg">
-            <div id="motto"></div>
-            <div id="mottoText"><p>知我者谓我心忧</p>
-                <p>不知我者谓我何愁</p>
-            </div>
-
-        </aside>
     </section>
+    
+    
+    
+    <section id="comment">
+            <div id="commentButton"><canvas height="40" width="40" id="commentNumber"></canvas><span>comment</span><canvas id="commentLogo" width="40" height="40"></canvas></div>
+        <div id="commentBox">
+            <form>
+                <div>
+                    <input placeholder="姓名">
+                    <br>
+                    <br>
+                    <input placeholder="电话">
+                    <br>
+                    <br>
+                    <input placeholder="邮箱">
+                    <br>
+                    <br>
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </div>
+                <textarea></textarea>
+                <article><h1><b>温馨提示</b></h1>
+    
+                </article>
+            </form>
+        </div>
+        </section>
+    
+    
+<section id="rightBox">
+        <img src="image/weixing.png">
+        <img src="image/qq.png">
+        <img src="image/xinglang.png">
+    </section>
+    
+    
+    
     <section id="middleBox">
         <header>
             <img src="image/p2.jpg">
@@ -102,35 +132,11 @@
             <div class="note" id="design">
                 <h1>设计随笔</h1>
             </div>
-        </article>
-        <div id="commentButton"><canvas height="40" width="40" id="commentNumber"></canvas><span>comment</span><canvas id="commentLogo" width="40" height="40"></canvas></div>
-        <div id="commentBox">
-            <form>
-                <div>
-                    <input placeholder="姓名">
-                    <br>
-                    <br>
-                    <input placeholder="电话">
-                    <br>
-                    <br>
-                    <input placeholder="邮箱">
-                    <br>
-                    <br>
-                    <input type="submit" value="提交">
-                    <input type="reset" value="重置">
-                </div>
-                <textarea></textarea>
-                <article><h1><b>温馨提示</b></h1>
-                    <br>
-                    <p>因为没有服务端所以暂时无法评论，敬请期待！</p>
-                </article>
-            </form>
-        </div>
+        </article>  
     </section>
-    <section id="rightBox">
-        <img src="image/weixing.png">
-        <img src="image/qq.png">
-        <img src="image/xinglang.png">
-    </section>
+            
+    
+    
+     <script src="action.js"></script>
 </body>
 </html>

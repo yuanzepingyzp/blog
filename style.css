@@ -12,31 +12,38 @@
 }
 
 body{
-     background-color: #e5e5e5;
+     background-image: url("image/Penguins.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
 }
 
-section{
-    float:left;
-}
 
 #leftBox{
-     width: 30%;
+     width: 270px;
+    float:left;
+    margin:10px 10px;
+    box-shadow:3px 3px 5px black;
  }
 
 #middleBox{
-    width:60%;
-    margin-left: 450px;
+    width:800px;
+   float:right;
+    margin-top: -10px;
+    box-shadow: -3px 0 3px black;
 }
 
 #rightBox{
-    width:5%;
-    margin-top: 500px;
+    width:50px;
+    float:right;
 }
 
 #blogMenuHeader{
     width: 270px;
     height: 40px;
-    background-color: #39566a;
+    background-color: #292728;
 }
 
 #blogMenuHeader canvas{
@@ -70,25 +77,16 @@ section{
 #blogMenu ul li:hover{
     border-bottom:2px solid #bf321d ;
 }
-
 #blogMenu{
-    position: fixed;
-    margin: 50px 0;
+    height:40px;
+    overflow: hidden;
+    transition: height 1s;
 }
 
-aside{
-    position:fixed;
-    top: 350px;
+#blogMenu:hover{
+    height: 250px;
 }
 
-aside p{
-    width: 20px;
-    margin-left: 20px;
-    float: left;
-    font-family: "Microsoft YaHei";
-    color: white;
-    font-size: 12px;
-}
 
 #motto{
     height:169px;
@@ -159,22 +157,24 @@ img{
 
 #middleBox article{
     width:740px;
-    height: 600px;
-    background-color: #39566a;
+    height: 800px;
+/*    background-color:rgba(1,1,1,0.5);*/
+    background-color: #292728;
     padding: 30px 30px;
     overflow: auto;
 }
 
 #commentButton{
-    width:800px;
+    width:450px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(220,220,220);
 }
 
 #commentBox{
-    width:800px;
-    height: 500px;
-    background-color: #39566a;
+    width:450px;
+    height: 1000px;
+/*    background-color:rgba(1,1,1,0.5);*/
+    background-color: #292728;
 }
 
 header img[src="image/photo.png"]{
@@ -183,10 +183,26 @@ header img[src="image/photo.png"]{
     top:130px;
     border-radius: 100px 100px 100px 100px;
     border: 10px solid white;
+    box-shadow:-3px 0 3px black;
 }
 
-#triangle{
-    cursor: pointer;
+#triangle.rotateUp{
+    animation:rotate 1s;
+   animation-fill-mode: forwards;
+}
+#triangle.rotateDown{
+    animation:restore 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes rotate{
+    0%{transform:  rotate(0deg);}
+    100%{transform: rotate(180deg);}
+}
+
+@keyframes restore{
+    0%{transform: rotate(180deg);}
+    100%{transform:rotate(0deg);}
 }
 
 #commentButton span{
@@ -212,15 +228,28 @@ header img[src="image/photo.png"]{
     cursor: pointer;
 }
 
-#blogMenu ul{
-    display: none;
+#rightBox{
+    float:right;
+    right:0;
+    width:50px;
+    height:250px;
+    border-left:10px solid rgb(150,150,150);
+    border-right:10px solid rgb(150,150,150);
+    background-color:white;
+    padding-top: 800px;
+    opacity:0.7;
 }
-
 #rightBox img{
-    margin-top: 5px;
+    margin: 5px auto;
     cursor: pointer;
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
 }
 
+#rightBox img:hover{
+    filter: grayscale(0);
+    -webkit-filter:grayscale(0);
+}
 .note h1{
     text-align: center;
     color:#e5bd0b;
@@ -288,7 +317,7 @@ article div{
 }
 
 #commentBox article{
-    float: right;
+    float: left;
     color: white;
     width:200px;
     height: 150px;
@@ -299,4 +328,8 @@ article div{
     color:#ffa600;
     font-size: 20px;
 
+}
+
+#comment{
+    float:right;
 }
