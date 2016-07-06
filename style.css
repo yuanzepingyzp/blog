@@ -24,6 +24,7 @@ body{
      width: 15%;
     position: fixed;
     box-shadow:3px 3px 5px black;
+    z-index:6;
  }
 
 #middleBox{
