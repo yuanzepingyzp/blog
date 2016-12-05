@@ -1,3 +1,6 @@
 # blog
 my blog
-The source code is on the gh-page brunch
+<br>
+The source code is on the gh-page brunch;
+<br>
+summarys of my project.
