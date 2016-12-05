@@ -1,5 +1,4 @@
-# blog
-<h1>my blog</h1>
+# myblog
 <br>
 The source code is on the gh-page brunch;
 <br>
